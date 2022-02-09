@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css" />
+    <script src="/script.js" defer></script>
+    <title>CSS - Filter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="filter-list">
+          <h1>CSS Filter Özellikleri</h1>
+          <ul>
+            <li>
+              <input type="checkbox" name="none" id="none" />
+              <label class="inline-block" for="none">None</label>
+            </li>
+
+            <li>
+              <label for="drop-shadow">drop-shadow(px)</label>
+              <label for="ds-x">x</label>
+              <input type="number" id="ds-x" class="numbers" value="0" />
+
+              <label for="ds-y">y</label>
+              <input type="number" id="ds-y" class="numbers" value="0" />
+
+              <label for="ds-blur">blur</label>
+              <input type="number" id="ds-blur" class="numbers" value="0" />
+
+              <label for="ds-color">color</label>
+              <input
+                type="color"
+                id="ds-color"
+                class="numbers"
+                value="#000000"
+              />
+            </li>
+
+            <li>
+              <label for="blur">blur(px)</label>
+              <input
+                type="range"
+                name="blur"
+                id="blur"
+                min="0"
+                max="100"
+                value="0"
+              />
+            </li>
+
+            <li>
+              <label for="hue-rotate">hue-rotate(deg)</label>
+              <input
+                type="range"
+                name="hue-rotate"
+                id="hue-rotate"
+                min="0"
+                max="360"
+                value="0"
+              />
+            </li>
+
+            <li>
+              <label for="brightness">brightness(%)</label>
+              <input
+                type="range"
+                name="brightness"
+                id="brightness"
+                min="0"
+                max="200"
+                value="100"
+              />
+            </li>
+
+            <li>
+              <label for="contrast">contrast(%)</label>
+              <input
+                type="range"
+                name="contrast"
+                id="contrast"
+                min="0"
+                max="200"
+                value="100"
+              />
+            </li>
+
+            <li>
+              <label for="saturate">saturate(%)</label>
+              <input
+                type="range"
+                name="saturate"
+                id="saturate"
+                min="0"
+                max="200"
+                value="100"
+              />
+            </li>
+            <!-- drop shadow list item -->
+
+            <li>
+              <label for="grayscale">grayscale(%)</label>
+              <input
+                type="range"
+                name="grayscale"
+                id="grayscale"
+                min="0"
+                max="100"
+              />
+            </li>
+
+            <li>
+              <label for="invert">invert(%)</label>
+              <input type="range" name="invert" id="invert" min="0" max="100" />
+            </li>
+
+            <li>
+              <label for="opacity">opacity(%)</label>
+              <input
+                type="range"
+                name="opacity"
+                id="opacity"
+                min="0"
+                max="100"
+              />
+            </li>
+
+            <li>
+              <label for="sepia">sepia(%)</label>
+              <input type="range" name="sepia" id="sepia" min="0" max="100" />
+            </li>
+          </ul>
+        </div>
+        <div class="img-box">
+          <img src="/img.jpg" alt="img" id="#img" />
+          <p id="cssText"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
